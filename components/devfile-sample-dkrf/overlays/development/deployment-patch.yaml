@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dkrf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0077-tenant/ci1t-830-0077-app/devfile-sample-dkrf@sha256:f834be9debed5accc9bd3ecbf44d0d48a8a3f6dca8f1c95c1a2ffe41b48f1175
+        name: my-nodejs
+        resources: {}
+status: {}
